@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap Spot</title>
+    <link rel="stylesheet" href="home.css"><!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Header with search and sell button -->
+    <div class="header">
+        <div class="logo">
+            <div class="logo_image">
+            </div>
+        </div>
+        <div class="location-search">
+            <div class="location1">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <select>
+                    <option>Dham</option>
+                    <option>Bhuwnam</option>
+                    <option>Gram</option>
+                    <!-- Add more Hostels as needed -->
+                </select>
+            </div>
+            
+            <div class="find-bar">
+                <input type="text" placeholder="Find Cars, Mobile Phones and more...">
+                <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="auth-buttons">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="sell-btn">+ SELL</a>
+        </div>
+    </div>
+
+    <!-- Categories section -->
+    <div class="categories">
+        <div class="all-cat">
+            <select>
+                <option>All CATEGORIES</option>
+                <option>Fan</option>
+                <option>Cycle</option>
+                <!-- Add more items as needed -->
+            </select>
+        </div>
+        <div class="other-cat">
+            <a href="#">Fans</a>
+            <a href="#">Cycle</a>
+            <a href="#">Study Table</a>
+            <a href="#">Stationary</a>
+            <a href="#">Accessory</a>
+            <a href="#">Digital Products</a>
+        </div>
+    </div>
+      <!-- Hero section with image slider (added here) -->
+    <div class="hero">
+        <div class="slider">
+            <img class="slide active" src="image2.png" alt="Image 1">
+            <img class="slide" src="image1.png" alt="Image 2">
+            <img class="slide" src="image3.png" alt="Image 3">
+            <img class="slide four_img" src="image4.jpeg" alt="Image 4">
+        </div>
+        <div class="navigation">
+            <button class="prev" onclick="prevSlide()">&#60;</button> <!-- Previous Button -->
+            <button class="next" onclick="nextSlide()">&#62;</button> <!-- Next Button -->
+        </div>
+    </div>
+
+    <!-- Fresh recommendations section -->
+    <div class="recommendations">
+        <h2>Fresh recommendations</h2>
+
+        <!-- Example recommendation card 1 -->
+        <div class="card">
+            <img src="Fan.jpg" alt="Fan">
+            <h3>₹1500</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, doloremque. Eum soluta cupiditate ut error explicabo corrupti.</p>
+        </div>
+
+        <!-- Example recommendation card 2 -->
+        <div class="card">
+            <img src="bicycle.webp" alt="herculus">
+            <h3>₹5,000</h3>
+            <p>New update version</p>
+        </div>
+
+        <!-- Example recommendation card 3 -->
+        <div class="card">
+            <img src="webBooks.jpg" alt="Web development books(3)">
+            <h3>₹1,500</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequatur, dicta necessitatibus id perferendis nisi blanditiis officia asperiores esse deleniti.</p>
+        </div>
+
+        <!-- Example recommendation card 4 -->
+        <div class="card">
+            <img src="StudyTable.jpg" alt="StudyTable">
+            <h3>₹200</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, saepe?</p>
+        </div>
+        <!-- Example recommendation card 1 -->
+        <div class="card">
+            <img src="Fan.jpg" alt="Fan">
+            <h3>₹1500</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, doloremque. Eum soluta cupiditate ut error explicabo corrupti.</p>
+        </div>
+
+        <!-- Example recommendation card 2 -->
+        <div class="card">
+            <img src="bicycle.webp" alt="herculus">
+            <h3>₹5,000</h3>
+            <p>New update version</p>
+        </div>
+
+        <!-- Example recommendation card 3 -->
+        <div class="card">
+            <img src="webBooks.jpg" alt="Web development books(3)">
+            <h3>₹1,500</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequatur, dicta necessitatibus id perferendis nisi blanditiis officia asperiores esse deleniti.</p>
+        </div>
+
+        <!-- Example recommendation card 4 -->
+        <div class="card">
+            <img src="StudyTable.jpg" alt="StudyTable">
+            <h3>₹200</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, saepe?</p>
+        </div>  
+
+    </div>
+    <!-- <script src="home.js"></script> -->
+</body>
+</html>

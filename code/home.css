@@ -1,0 +1,358 @@
+/* Basic styles for the layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* ---------- START OF HEADER SECTION------------------- */
+.header {
+    background-color: #003580;
+    /* background-color: #f4f4f4; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    width:100%;
+}
+/* box 1 */
+.logo {
+    height: 90%;
+    width:8%;
+    border: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;  /* Center the logo horizontally */
+    align-items: center; 
+}
+
+.logo_image {
+    height: 100%;
+    width:100%;
+    background-image: url("logo.png");
+    background-position: center;     
+    background-size: contain;       
+    background-repeat: no-repeat;
+    border:0.2rem solid  #003580;
+    /* border:1px solid red; */
+}
+
+.logo_image:hover{
+    border: 0.2rem solid #ffe70f;
+}
+ 
+/* box 2 */
+.location-search {
+    height:90%;
+    width:78%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 0.05rem solid white; */
+}
+.header .location1 {
+    width: 20%;
+    height: 85%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0.1rem;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+}
+.header .location-search .location1 i {
+    width: 20%;
+    height:100%;
+    text-align: center;
+    vertical-align: center;
+    font-size: 1.4rem; /* Slightly increase the icon size */
+    padding: 0 0.5rem; /* Adjust padding for better spacing */
+    padding-top: 1rem;
+    margin-bottom: 0.04rem;
+}
+.header .location-search .location1 select {
+    width: 80%;
+    height: 100%;
+    padding: 0.1rem;
+    border: none;
+    border-radius: 5px;
+    /* border: 2px solid white; */
+}
+
+.header .find-bar{
+    height: 85%;
+    width: 74%;
+    display: flex;
+    background-color: white;
+    border: 1px solid white;
+    align-items: center;
+    border-radius: 5px;
+}
+.header .find-bar input[type="text"] {
+    height:90%;
+    width:90%;
+    padding: 0.1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.search-icon {
+    height:100%;
+    width:10%;
+    border: none;
+    border-radius: 5px;
+    padding: 0.1rem;
+    background-color: #3478d6;
+    align-content: center;
+    /* text-align: center; */
+}
+
+/* box 3 */
+.auth-buttons {
+    height:90%;
+    width:10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 1rem;
+    /* border: 1px solid wheat; */
+}
+.login {
+    height:85%;
+    width:45%;
+    padding: 0.1rem 0.2rem;
+    color: white;
+    align-content: center;
+    text-decoration: none;
+    /* border: 1px solid beige; */
+}
+.sell-btn {
+    height: 85%;
+    width: 45%;
+    align-content: center;
+    background-color: #ff6600;
+    padding: 0.1rem 0.2rem;
+    color: white;
+    text-decoration: none;
+    border: 1px soild black;
+    border-radius: 5px;
+    /* font-weight: bold; */
+}
+/* ------------------END OF HEADER SECTION--------------- */
+
+/* ----------------- START OF categories SECTION -----------------------  */
+.categories {
+    height: 6vh;
+    width: 100%;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f4f4f4;
+    /* background-color: #003580; */
+}
+.categories .all-cat select {
+    border:none;
+    /* outline:none; */
+    font-size: 1.55rem;
+    padding: 0.02rem;
+    background-color: #f4f4f4;
+
+}
+.other-cat {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.categories a {
+    text-decoration: none;
+    color: black;
+    /* font-weight: bold; */
+}
+
+
+
+
+
+/* -------------- END OF .categories SECTION ------------- */
+
+              /* HERO SECTION  */
+/* Hero section */
+.hero {
+    /* margin-top: 0.5rem; */
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    margin-bottom: 0.2rem;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    object-fit: content;
+    position: center;
+}
+.four_img{
+    object-fit: cover;
+}
+.slider img.active {
+    display: block;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    /* border: 1px solid black; */
+}
+
+.navigation button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    padding-left:2vw;
+    padding-right: 2vw;
+    cursor: pointer;
+    font-size: 2vw;
+    transition: background-color 0.3s ease;
+    
+}
+
+.navigation button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+                    /* END OF HERO SECTION  */
+
+.recommendations {
+    padding: 20px;
+}
+
+.recommendations h2 {
+    font-size: 24px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 200px;
+    float: left;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333;
+}
+
+.clear-fix {
+    clear: both;
+}
+/* added media query for proper adjustments on smaller screen  */
+
+/* Media query for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+    /* Adjusting categories container */
+    .header {
+        width:100vh;
+    }
+    .login {
+        font-size: 1rem;
+    }
+    .sell-btn {
+        font-size: 1rem;
+    }
+    .hero{
+        width: 100vh;
+    }
+    .categories {
+        flex-direction: row; 
+        justify-content: space-between; 
+        padding: 0.5rem;
+        width: 100vh;
+    }
+    
+    /* Adjusting font size for smaller screens */
+    .categories .all-cat select {
+        font-size: 1.3rem;
+        padding: 0.2rem; 
+        font-weight: 700;
+    }
+    
+    .other-cat {
+        width: 100%; 
+        justify-content: space-around;
+    }
+
+    .other-cat a {
+        font-size: 1.0rem; 
+        margin: 0.3rem;   
+    }
+}
+
+/* Media query for extra small screens (e.g., small mobile devices) */
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .header {
+        width:100vh;
+    }
+    .login {
+        font-size: 0.8rem;
+    }
+    .sell-btn {
+        font-size: 0.8rem;
+    }
+    .hero{
+        width: 100vh;
+    }
+    .categories {
+        width:100vh;
+    }
+    .categories .all-cat select {
+        font-size: 1rem;
+        padding: 0.3rem;
+        font-weight: 650;
+    }
+
+    .other-cat {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .other-cat a {
+        font-size: 1rem;
+        margin: 0.2rem;  
+    }
+
+    .categories {
+        padding: 0.3rem;
+    }
+}
+
