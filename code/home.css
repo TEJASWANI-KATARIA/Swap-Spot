@@ -29,7 +29,7 @@ body {
 .logo_image {
     height: 100%;
     width:100%;
-    background-image: url("logo.png");
+    background-image: url("../other_items/logo.png");
     background-position: center;     
     background-size: contain;       
     background-repeat: no-repeat;
@@ -79,6 +79,9 @@ body {
     border-radius: 5px;
     /* border: 2px solid white; */
 }
+.header .location-search .location1 select:hover {
+    border: 0.2em solid gray;
+}
 
 .header .find-bar{
     height: 85%;
@@ -96,6 +99,10 @@ body {
     border: 1px solid white;
     border-radius: 5px;
 }
+.header .find-bar input:hover {
+    border: rgb(128, 128, 128);
+    background-color: rgba(128, 128, 128,0.2);
+}
 .search-icon {
     height:100%;
     width:10%;
@@ -105,6 +112,9 @@ body {
     background-color: #3478d6;
     align-content: center;
     /* text-align: center; */
+}
+.search-icon:active{
+    background-color: #ffe70f;
 }
 
 /* box 3 */
@@ -122,9 +132,13 @@ body {
     width:45%;
     padding: 0.1rem 0.2rem;
     color: white;
-    align-content: center;
+    align-content: center;  /* vertical align */
+    text-align: center;     /* horzontal align */
     text-decoration: none;
     /* border: 1px solid beige; */
+}
+.auth-buttons .login:hover {
+    border: 0.1em solid #ffe70f;
 }
 .sell-btn {
     height: 85%;
@@ -137,6 +151,11 @@ body {
     border: 1px soild black;
     border-radius: 5px;
     /* font-weight: bold; */
+}
+
+.auth-buttons .sell-btn:hover {
+    background-color: #ffe70f;
+    color: #ff6600;
 }
 /* ------------------END OF HEADER SECTION--------------- */
 
@@ -159,20 +178,29 @@ body {
     background-color: #f4f4f4;
 
 }
+.categories .all-cat select:hover {
+    border:0.15em solid gray;
+    border-radius: 10px;
+}
 .other-cat {
     width: 70%;
     display: flex;
     justify-content: space-evenly;
-
 }
-.categories a {
+.categories .other-cat a {
     text-decoration: none;
     color: black;
+    padding-top:0.5rem ;
+    padding-bottom:0.5rem ;
+    padding-left:0.5rem ;
+    padding-right:0.5rem ;
     /* font-weight: bold; */
 }
 
-
-
+.categories .other-cat a:hover {
+    border: 2px solid gray;
+    border-radius: 10px;
+}
 
 
 /* -------------- END OF .categories SECTION ------------- */
@@ -355,4 +383,92 @@ body {
         padding: 0.3rem;
     }
 }
+.footer-container{
+    /* height:60vh; */
+    width:100%;
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+}
+.footer-container .footer-about {
+    height: 20%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid orangered; */
+    /* background-image: url("../other_items/image2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    
+}
+.footer-about h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    height: 25%;
+    /* width:100%; */
+    align-content: center;
+    text-align: center;
+    /* border:1px solid black; */
+}
+.footer-about p {
+    height: 55%;
+    width:50%;
+    align-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    /* border: 1px solid red; */
+}
 
+/*                  about end           */
+.footer-container .footer-links {
+    /* height: 30%; */
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-links h3{
+    font-weight: 700;
+    font-size: 2rem;
+    /* height: 25%; */
+    /* width:100%; */
+    align-content: center;
+    text-align: center;
+}
+.footer-links ul{
+    display: flex;
+    justify-content: space-evenly;
+    /* height: 10%; */
+}
+.footer-links ul li{
+    list-style-type: none;
+    text-align: center;
+    align-content: center;
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    /* border: 1px solid black */
+}
+.footer-links ul li a{
+    text-decoration:none ;
+    font-size: 1.2rem;
+    color: black;
+}
+.footer-links ul li a i {
+    padding:10px;
+}
+.footer-links ul li:hover {
+    border: 2px solid gray;
+}
+.footer-container .footer-contact {
+    height: 40%;
+    width: 100%;
+    /* border: 1px solid red; */
+}
