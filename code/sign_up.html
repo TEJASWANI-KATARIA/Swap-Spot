@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign_up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <h2>Sign Up</h2>
+
+            <!-- Sign Up Form -->
+            <form action="#" id="signupForm">
+                <!-- Name Field -->
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <!-- Password Field -->
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <i class="fa-solid fa-eye-slash toggle-password" id="togglePassword" style="cursor: pointer;"></i> <!-- Eye-slash icon initially -->
+                </div>
+
+                <!-- Confirm Password Field -->
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+
+                <!-- OTP Field (Hidden initially) -->
+                <div class="input-box otp-box" style="display: none;">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="text" id="otp" placeholder="Enter OTP" required>
+                </div>
+
+                <!-- Verify OTP Button (Hidden initially) -->
+                <button type="button" class="otp-btn" id="verifyOtpBtn" style="display: none;">Verify OTP</button>
+
+
+                <!-- Sign Up Button -->
+                <button type="submit" class="signup-btn">Sign Up</button>
+
+                <!-- Already have an account? Link to Sign In -->
+                <div class="footer-links">
+                    <p>Already have an account? <a href="sign_in.html">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="sign_up.js"></script>
+</body>
+</html>

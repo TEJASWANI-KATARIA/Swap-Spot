@@ -1,0 +1,143 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+/* Sign Up Container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Sign Up Box Styling */
+.signup-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form Header */
+.signup-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input Box Container */
+.input-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Input Icon Styling */
+.input-box i {
+    margin-right: 10px;
+    color: #888;
+}
+
+/* Input Fields Styling */
+.input-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+}
+
+/* Eye icon for password visibility toggle */
+.toggle-password {
+    margin-left: 10px;
+    color: #888;
+}
+
+/* OTP Box styling (Initially hidden) */
+.otp-box {
+    display: none;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.otp-btn {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.otp-btn:hover {
+    background-color: #2980b9;
+}
+
+
+/* Sign Up Button */
+.signup-btn {
+    width: 100%;
+    background-color: #2ecc71;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Footer Links (Already have an account?) */
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 400px) {
+    .signup-box {
+        padding: 20px;
+    }
+
+    .input-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-box input {
+        margin-top: 10px;
+    }
+}

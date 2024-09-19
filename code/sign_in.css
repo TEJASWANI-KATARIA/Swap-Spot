@@ -1,0 +1,121 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+/* Sign In Container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Sign In Box Styling */
+.signin-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form Header */
+.signin-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input Box Container */
+.input-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Input Icon Styling */
+.input-box i {
+    margin-right: 10px;
+    color: #888;
+}
+
+/* Input Fields Styling */
+.input-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+}
+
+/* Remember Me Section */
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+/* Sign In Button */
+.signin-btn {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.signin-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Footer Links (Forgot Password & Sign Up) */
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 400px) {
+    .signin-box {
+        padding: 20px;
+    }
+
+    .input-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-box input {
+        margin-top: 10px;
+    }
+}
