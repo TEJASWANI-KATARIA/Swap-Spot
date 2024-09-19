@@ -68,32 +68,6 @@ body {
     color: #888;
 }
 
-/* OTP Box styling (Initially hidden) */
-.otp-box {
-    display: none;
-    align-items: center;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.otp-btn {
-    width: 100%;
-    background-color: #3498db;
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-.otp-btn:hover {
-    background-color: #2980b9;
-}
-
 
 /* Sign Up Button */
 .signup-btn {
