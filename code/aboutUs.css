@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.upper {
+    height:35vh;
+    width:99%;
+    padding: 8px;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+}
+.title {
+    width:60%;
+    height:92%;
+    padding: 8px;
+    /* border: 1px solid black; */
+    align-content: center;
+}
+.uImg {
+    height: 92%;
+    width: 33%;
+    padding: 8px;
+    /* border:1px solid black; */
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.uphoto {
+    height:80%;
+    width: 66%;
+    /* border: 1px solid black; */
+}
+
+.middle {
+    width:99%;
+    height: 45vh;
+    padding: 8px;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border:1px solid red; */
+}
+
+.middle .first {
+    width: 96%;
+    height: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.first .mImgFirst {
+    width: 45%;
+    height: 92%;
+    padding: 3px;
+    /* border: 1px solid blue; */
+}
+
+.first .middleFirstText {
+    width: 50%;
+    height: 92%;
+    padding: 3px;
+    /* border: 1px solid blue; */
+}
+
+
+.middle .second {
+    width: 96%;
+    height: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.second .middleSecondText {
+    width: 45%;
+    height: 92%;
+    padding: 3px;
+    /* border: 1px solid blue; */
+}
+
+.second .mImgSecond {
+    width: 50%;
+    height: 92%;
+    padding: 3px;
+    /* border: 1px solid blue; */
+}
+
+
+.lower {
+    width: 99%;
+    height: 40vh;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid red; */
+} 
+.lower .lTitle {
+    width: 92%;
+    height: 20%;
+    /* border: 1px solid black; */
+}
+.lower .Feature-box {
+    width:92%;
+    height: 79%;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    display: flex;
+}
+.lower .Feature-box .feat {
+    width: 30.3%;
+    /* height: 90%; */
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lower .Feature-box .feat .f-common {
+    width: 93%;
+    padding: 2px;
+    height:67%;
+    border: 1px solid purple;
+}
+
+.shortLowerNotes {
+    width:99%;
+    padding: 8px;
+    height: 6vh;
+    /* border: 1px solid red; */
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.foot {
+    /* height: 35vh; */
+    height: 44vh;
+    /* border: 1px solid red; */
+}
+.footer-about {
+    height: 40%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container {
+    height: 50%;
+    /* border: 1px solid black; */
+}
+
+.footer-links{
+    /* border: 1px solid blue; */
+    padding-top: 1rem;
+    margin-top: 1.3rem;
+}
+.footer-contact {
+    height: 100%;
+    padding-top: 1rem;
+    margin-top: 1.3rem;
+    /* border: 1px solid blue; */
+}
+
+.footer-bottom {
+    height: 10%;
+}
