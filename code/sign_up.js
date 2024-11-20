@@ -112,8 +112,18 @@ function clearError(input) {
     }
 }
 
-// Function to validate email format
 function isValidEmail(email) {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // for the specific Banasthali email format
+    const emailPattern = /^[a-zA-Z]{5}\d{5}_[a-zA-Z]+@banasthali\.in$/;
     return emailPattern.test(email);
 }
+
+/* 
+Regex Explanation:
+
+^[a-zA-Z]{5}: Ensures the email starts with exactly 5 letters.
+\d{5}: Followed by exactly 5 digits.
+_: Requires an underscore.
+[a-zA-Z]+: Matches a name with at least one letter after the underscore.
+@banasthali\.in$: Ends with @banasthali.in.
+ */
