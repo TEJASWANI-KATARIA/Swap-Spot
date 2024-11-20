@@ -19,23 +19,22 @@ togglePassword.addEventListener('click', function () {
     this.classList.toggle('fa-eye-slash');
 });
 
-
-
 // Event listener for form submission
 form.addEventListener('submit', function (e) {
-    alert("submitted");
     e.preventDefault(); // Prevents form from submitting automatically
 
     // Validating inputs
-    if (!validateInputs()) {
-        return; // Stop if validation fails
+    if (validateInputs()) {
+        // Inputs are valid
+        alert("Signed up successfully!"); // Show this only if inputs are valid
+
+        // Hide the sign-up button (optional)
+        form.querySelector('button.signup-btn').style.display = 'none';
+
+        // Optionally, proceed with form submission
+        form.submit(); // Use this line if you want to submit the form after validation
     }
-
-
-    // Hide the sign-up button
-    form.querySelector('button.signup-btn').style.display = 'none';
 });
-
 
 // Validation function
 function validateInputs() {
@@ -54,7 +53,7 @@ function validateInputs() {
         showError(email, "Email is required");
         isValid = false;
     } else if (!isValidEmail(email.value.trim())) {
-        showError(email, "Please enter a valid email");
+        showError(email, "Please enter a valid Banasthali email");
         isValid = false;
     } else {
         clearError(email);
@@ -112,18 +111,9 @@ function clearError(input) {
     }
 }
 
+// Function to validate email format
 function isValidEmail(email) {
-    // for the specific Banasthali email format
+    // For the specific Banasthali email format
     const emailPattern = /^[a-zA-Z]{5}\d{5}_[a-zA-Z]+@banasthali\.in$/;
     return emailPattern.test(email);
 }
-
-/* 
-Regex Explanation:
-
-^[a-zA-Z]{5}: Ensures the email starts with exactly 5 letters.
-\d{5}: Followed by exactly 5 digits.
-_: Requires an underscore.
-[a-zA-Z]+: Matches a name with at least one letter after the underscore.
-@banasthali\.in$: Ends with @banasthali.in.
- */
